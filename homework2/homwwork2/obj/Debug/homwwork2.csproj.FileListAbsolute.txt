@@ -1,0 +1,10 @@
+F:\C#\homwwork2\homwwork2\bin\Debug\homwwork2.exe.config
+F:\C#\homwwork2\homwwork2\bin\Debug\homwwork2.exe
+F:\C#\homwwork2\homwwork2\bin\Debug\homwwork2.pdb
+F:\C#\homwwork2\homwwork2\obj\Debug\homwwork2.csprojAssemblyReference.cache
+F:\C#\homwwork2\homwwork2\obj\Debug\homwwork2.Form1.resources
+F:\C#\homwwork2\homwwork2\obj\Debug\homwwork2.Properties.Resources.resources
+F:\C#\homwwork2\homwwork2\obj\Debug\homwwork2.csproj.GenerateResource.cache
+F:\C#\homwwork2\homwwork2\obj\Debug\homwwork2.csproj.CoreCompileInputs.cache
+F:\C#\homwwork2\homwwork2\obj\Debug\homwwork2.exe
+F:\C#\homwwork2\homwwork2\obj\Debug\homwwork2.pdb
