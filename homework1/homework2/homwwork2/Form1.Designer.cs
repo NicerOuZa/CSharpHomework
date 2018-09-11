@@ -48,26 +48,27 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(399, 139);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
+            this.textBox2.Size = new System.Drawing.Size(150, 25);
             this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Text = "请输入第二个数：";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(314, 213);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.Size = new System.Drawing.Size(127, 15);
             this.label1.TabIndex = 3;
+            this.label1.Text = "答案将出现在这里";
             this.label1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(254, 139);
+            this.textBox1.Location = new System.Drawing.Point(228, 139);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.Size = new System.Drawing.Size(150, 25);
             this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Text = "请输入第一个数：";
             // 
             // Form1
             // 

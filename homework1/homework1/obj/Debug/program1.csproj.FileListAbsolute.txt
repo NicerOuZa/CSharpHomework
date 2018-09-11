@@ -1,0 +1,7 @@
+F:\C#\Git\homework1\homework1\obj\Debug\program1.csprojAssemblyReference.cache
+F:\C#\Git\homework1\homework1\obj\Debug\program1.csproj.CoreCompileInputs.cache
+F:\C#\Git\homework1\homework1\obj\Debug\homework1.exe
+F:\C#\Git\homework1\homework1\obj\Debug\homework1.pdb
+F:\C#\Git\homework1\homework1\bin\Debug\homework1.exe.config
+F:\C#\Git\homework1\homework1\bin\Debug\homework1.exe
+F:\C#\Git\homework1\homework1\bin\Debug\homework1.pdb

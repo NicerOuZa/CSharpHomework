@@ -11,11 +11,13 @@ namespace homework1
         static void Main(string[] args)
         {
            string x,y;
-           double m, n,s;
+           double m,n,s;
             Console.Write("请输入两个数字以计算其乘积：");
             x = Console.ReadLine();
-            m = double.Parse(x);
+             m = double.Parse(x);
             y = Console.ReadLine();
+            //bool double.TryParse(x, out double m);
+            //bool double.TryParse(y, out double n);
             n = double.Parse(y);
             s = m * n;
             Console.WriteLine($"{m}和{n}的乘积是: {s}");
