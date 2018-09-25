@@ -27,11 +27,27 @@ namespace homwwork2
             //方法2
             //label1.Text = (int.Parse(textBox1.Text) * int.Parse(textBox2.Text)).ToString();
             //方法3
-            int a = int.Parse(textBox1.Text);
-            int b = int.Parse(textBox2.Text);
-            label1.Text = (a * b).ToString();
+            //double a = double.Parse(textBox1.Text);
+            // double b = double.Parse(textBox2.Text);
+            //label1.Text = (a * b).ToString();
+            //方法4：
+            double a, b;
+            if (double.TryParse(textBox1.Text, out a) == false)
+            {
+                MessageBox.Show("输入值无法转换为double型");
+            }
+            if (double.TryParse(textBox2.Text, out b) == false)
+            {
+                MessageBox.Show("输入值无法转换为double型");
+            }
+            try
+            {
+                label1.Text = (a * b).ToString();
+            }
+            catch
+            {
+                MessageBox.Show("输出值无法转换为string型");
+            }
         }
-
-  
     }
 }
