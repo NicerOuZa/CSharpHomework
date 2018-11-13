@@ -25,7 +25,7 @@ namespace Homework7
         {
             try
             {
-                if (this.textBox1.Text == "")
+                if (this.comboBox1.SelectedItem.ToString() == "")
                 {
                     if (this.textBox2.Text == "")
                     {
@@ -37,8 +37,8 @@ namespace Homework7
                         {
                             string client = this.textBox3.Text;
                             Order order = OrderService.InquiryOrder_(client);
-                            string str = String.Format("订单号：{0}   商品名称：{1}   客户：{2}   金额：{3}", order.OrderNum, order.GoodName,
-                                order.Client, order.OrderSum);
+                            string str = String.Format("订单号：{0}   商品名称：{1}   客户：{2}   金额：{3}   电话号码：{4}", order.OrderNum, order.GoodName,
+                                order.Client, order.OrderSum, order.PhoneNum);
                             MessageBox.Show(str);
                         }
                     }
@@ -46,17 +46,17 @@ namespace Homework7
                     {
                         string goodName = this.textBox2.Text;
                         Order order = OrderService.InquiryOrder(goodName);
-                        string str = String.Format("订单号：{0}   商品名称：{1}   客户：{2}   金额：{3}", order.OrderNum, order.GoodName,
-                            order.Client, order.OrderSum);
+                        string str = String.Format("订单号：{0}   商品名称：{1}   客户：{2}   金额：{3}   电话号码：{4}", order.OrderNum, order.GoodName,
+                            order.Client, order.OrderSum, order.PhoneNum);
                         MessageBox.Show(str);
                     }
                 }
                 else
                 {
-                    int orderNum = Convert.ToInt32(this.textBox1.Text);
+                    long orderNum = Int64.Parse(this.comboBox1.SelectedItem.ToString());
                     Order order = OrderService.InquiryOrder(orderNum);
-                    string str = String.Format("订单号：{0}   商品名称：{1}   客户：{2}   金额：{3}", order.OrderNum, order.GoodName,
-                        order.Client, order.OrderSum);
+                    string str = String.Format("订单号：{0}   商品名称：{1}   客户：{2}   金额：{3}   电话号码：{4}", order.OrderNum, order.GoodName,
+                        order.Client, order.OrderSum,order.PhoneNum);
                     MessageBox.Show(str);
                 }
                 
@@ -109,7 +109,33 @@ namespace Homework7
                 form.Show();
             }
         }
-        public void actionPerformed()
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            bool isfind = false;
+            foreach (Form fm in Application.OpenForms)
+            {
+                if (fm.Name == "Form4")
+                {
+                    fm.WindowState = FormWindowState.Maximized;
+                    fm.WindowState = FormWindowState.Normal;
+                    fm.Activate();
+                    return;
+                }
+            }
+            if (!isfind)
+            {
+                Form form = new Form4();
+                form.Show();
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
 
         }

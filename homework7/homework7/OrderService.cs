@@ -36,8 +36,10 @@ namespace Homework7
 
             try
             {
-                var res = from order in allOrders where order.OrderNum == orderNum select order;
-                Order a = res.Single();
+                var res =allOrders
+                         .Where(od => od.OrderNum == orderNum)
+                         .Select(od=>od);
+                Order a = (Order)res;
                 allOrders.Remove(a);
             }
             catch
