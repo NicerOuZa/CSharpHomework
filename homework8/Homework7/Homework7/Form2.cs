@@ -38,8 +38,8 @@ namespace Homework7
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 //新建订单
                 DateTime nowDate = DateTime.Now;
                 orderNum = Convert.ToInt64(nowDate.Date.ToString("yyyyMMdd") + this.textBox1.Text);
@@ -74,12 +74,12 @@ namespace Homework7
                 Form1.form1.comboBox1.SelectedIndex = 0;
                 this.Close();
             }
-                //}
+                }
             
-            //catch (Exception exception)
-            //{
-            //    MessageBox.Show("请正确输入订单");
-            //}
+            catch (Exception exception)
+            {
+                MessageBox.Show("请正确输入订单");
+            }
             
         }
 
